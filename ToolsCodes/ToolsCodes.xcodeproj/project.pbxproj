@@ -15,6 +15,9 @@
 		713EEC8D1AA0978300B13117 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 713EEC8B1AA0978300B13117 /* LaunchScreen.xib */; };
 		713EEC991AA0978300B13117 /* ToolsCodesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 713EEC981AA0978300B13117 /* ToolsCodesTests.m */; };
 		713EECA91AA0984C00B13117 /* UIImage+HM.m in Sources */ = {isa = PBXBuildFile; fileRef = 713EECA81AA0984C00B13117 /* UIImage+HM.m */; };
+		713EECE21AA09B5700B13117 /* MBProgressHUD+CZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 713EECDE1AA09B5700B13117 /* MBProgressHUD+CZ.m */; };
+		713EECE31AA09B5700B13117 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 713EECDF1AA09B5700B13117 /* MBProgressHUD.bundle */; };
+		713EECE41AA09B5700B13117 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 713EECE11AA09B5700B13117 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,11 @@
 		713EEC981AA0978300B13117 /* ToolsCodesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolsCodesTests.m; sourceTree = "<group>"; };
 		713EECA71AA0984C00B13117 /* UIImage+HM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HM.h"; sourceTree = "<group>"; };
 		713EECA81AA0984C00B13117 /* UIImage+HM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HM.m"; sourceTree = "<group>"; };
+		713EECDD1AA09B5700B13117 /* MBProgressHUD+CZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+CZ.h"; sourceTree = "<group>"; };
+		713EECDE1AA09B5700B13117 /* MBProgressHUD+CZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+CZ.m"; sourceTree = "<group>"; };
+		713EECDF1AA09B5700B13117 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		713EECE01AA09B5700B13117 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		713EECE11AA09B5700B13117 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,10 +142,23 @@
 		713EECA31AA097B100B13117 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				713EECDC1AA09B5700B13117 /* MBProgressHUD */,
 				713EECA71AA0984C00B13117 /* UIImage+HM.h */,
 				713EECA81AA0984C00B13117 /* UIImage+HM.m */,
 			);
 			name = Tools;
+			sourceTree = "<group>";
+		};
+		713EECDC1AA09B5700B13117 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				713EECDD1AA09B5700B13117 /* MBProgressHUD+CZ.h */,
+				713EECDE1AA09B5700B13117 /* MBProgressHUD+CZ.m */,
+				713EECDF1AA09B5700B13117 /* MBProgressHUD.bundle */,
+				713EECE01AA09B5700B13117 /* MBProgressHUD.h */,
+				713EECE11AA09B5700B13117 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				713EEC881AA0978300B13117 /* Main.storyboard in Resources */,
+				713EECE31AA09B5700B13117 /* MBProgressHUD.bundle in Resources */,
 				713EEC8D1AA0978300B13117 /* LaunchScreen.xib in Resources */,
 				713EEC8A1AA0978300B13117 /* Images.xcassets in Resources */,
 			);
@@ -241,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				713EECA91AA0984C00B13117 /* UIImage+HM.m in Sources */,
+				713EECE41AA09B5700B13117 /* MBProgressHUD.m in Sources */,
+				713EECE21AA09B5700B13117 /* MBProgressHUD+CZ.m in Sources */,
 				713EEC851AA0978300B13117 /* ViewController.m in Sources */,
 				713EEC821AA0978300B13117 /* AppDelegate.m in Sources */,
 				713EEC7F1AA0978300B13117 /* main.m in Sources */,
@@ -434,6 +458,7 @@
 				713EEC9E1AA0978300B13117 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		713EEC9F1AA0978300B13117 /* Build configuration list for PBXNativeTarget "ToolsCodesTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +467,7 @@
 				713EECA11AA0978300B13117 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
