@@ -19,4 +19,12 @@
  *  @return 截取后的头像
  */
 + (instancetype)imageWithIconName:(NSString *)name boardWidth:(CGFloat)width boardColor:(UIColor *)color;
+/**
+ *  用于截图的类方法
+ *
+ *  @param view 需要截取的控件
+ *
+ *  @return 返回的截取的图片
+ */
++ (instancetype)captureWithView:(UIView *)view;
 @end

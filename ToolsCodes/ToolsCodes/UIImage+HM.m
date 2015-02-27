@@ -69,4 +69,25 @@
     UIGraphicsEndImageContext();
     return newImage;
 }
+/**
+ *  用于截图的类方法
+ *
+ *  @param view 需要截取的控件
+ *
+ *  @return 返回的截取的图片
+ */
++ (instancetype)captureWithView:(UIView *)view
+{
+    // 开启上下文
+    UIGraphicsBeginImageContext(view.frame.size);
+    // 渲染到上下文
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    // 取出图片
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    // 关闭上下文
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
 @end

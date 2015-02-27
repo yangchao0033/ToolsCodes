@@ -143,8 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				713EECDC1AA09B5700B13117 /* MBProgressHUD */,
-				713EECA71AA0984C00B13117 /* UIImage+HM.h */,
-				713EECA81AA0984C00B13117 /* UIImage+HM.m */,
+				713EECE51AA09B8300B13117 /* UIImage+HM */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -159,6 +158,15 @@
 				713EECE11AA09B5700B13117 /* MBProgressHUD.m */,
 			);
 			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		713EECE51AA09B8300B13117 /* UIImage+HM */ = {
+			isa = PBXGroup;
+			children = (
+				713EECA71AA0984C00B13117 /* UIImage+HM.h */,
+				713EECA81AA0984C00B13117 /* UIImage+HM.m */,
+			);
+			name = "UIImage+HM";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
